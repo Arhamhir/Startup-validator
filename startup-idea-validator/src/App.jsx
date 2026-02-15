@@ -7,13 +7,14 @@ function App() {
   const [analysisData, setAnalysisData] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
+  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'
 
   const handleAnalyze = async (formData) => {
     setLoading(true)
     setError(null)
     
     try {
-      const response = await fetch('http://localhost:5000/api/validate', {
+      const response = await fetch(`${apiBaseUrl}/api/validate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
