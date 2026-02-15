@@ -24,7 +24,7 @@ def finance_node(startup_idea: StartupIdea, constraints: UserConstraints) -> Fin
     )
     json_instruction = (
         "Return ONLY JSON with keys: projected_revenue (list of floats), "
-        "projected_costs (list of floats), funding_rounds (list of objects with amount, date, investors), "
+        "projected_costs (list of floats), funding_rounds (list of objects with amount, date, investors as a list of names), "
         "cash_runaway_months (float)."
     )
     messages = [

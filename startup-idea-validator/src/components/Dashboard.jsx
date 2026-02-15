@@ -258,7 +258,7 @@ function Dashboard({ data, onReset }) {
                   <ul>
                     {finance.funding_rounds.map((round, index) => (
                       <li key={index}>
-                        ${round.amount?.toLocaleString()} from {round.investors} ({round.date})
+                        ${round.amount?.toLocaleString()} from {Array.isArray(round.investors) ? round.investors.join(', ') : round.investors}
                       </li>
                     ))}
                   </ul>

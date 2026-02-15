@@ -41,7 +41,11 @@ class StartupToolPrompts:
                 Provide projections for revenue, costs, and funding needs. 
                 Identify potential investors and funding sources based on the industry and market.
                 Use conservative assumptions; avoid straight-line growth and overly smooth projections.
-                Show realistic cost pressure and margin uncertainty."""       
+                Show realistic cost pressure and margin uncertainty.
+                If you include funding rounds, use objects with:
+                - amount (number)
+                - date (YYYY-MM-DD)
+                - investors (list of names, not a single concatenated string)."""       
 
     SYSTEM_FINANCIAL_ANALYSIS = """You are a financial analyst specializing in startups.
                             Focus on financial viability, projections, and funding opportunities.
