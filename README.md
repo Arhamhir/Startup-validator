@@ -69,7 +69,7 @@ Input ────┼─→ Engineering ───┤
 ## Performance & Optimization
 
 ### Backend
-- **Concurrent agents**: ~30-60s total (bottleneck is LLM API latency, not orchestration)
+- **Concurrent agents**: ~10-30s total 
 - **JSON parsing**: Regex-based extraction tolerates minor LLM formatting variance
 - **CORS enabled**: Allows requests from any frontend origin
 
