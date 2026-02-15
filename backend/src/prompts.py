@@ -70,10 +70,17 @@ class StartupToolPrompts:
                 Legal Analysis: {legal_analysis}
                 Social Analysis: {social_analysis}
 
-                Identify:
-                - Contradictions between agents
-                - Unrealistic assumptions
-                - Constraint violations"""    
+                Provide a final recommendation using one of:
+                - proceed
+                - proceed_with_caution
+                - pivot
+                - stop
 
-    SYSTEM_CRITIC_ANALYSIS = """You are a critical analyst evaluating the outputs of multiple agents analyzing a startup idea. 
-                            Focus on identifying contradictions, unrealistic assumptions, and constraint violations across market, engineering, financial, legal, and social analyses. Provide clear feedback on which agent(s) need to re-evaluate their analysis and why."""   
+                Also include:
+                - A concise list of conflicts (only if material)
+                - 2-4 priority areas that most impact the decision
+                - A short, confident rationale (avoid "re-evaluate all")
+                - Only call for re-evaluation if a specific conflict blocks a decision"""    
+
+    SYSTEM_CRITIC_ANALYSIS = """You are a critical analyst evaluating the outputs of multiple agents analyzing a startup idea.
+                            Make a decisive recommendation whenever possible. Only request re-evaluation if a specific, blocking contradiction or constraint violation is found. Keep the tone confident and outcome-focused."""   
