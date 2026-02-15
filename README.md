@@ -78,4 +78,3 @@ Input ────┼─→ Engineering ───┤
 - **Production build**: ~150KB gzipped (React + Recharts + Framer Motion)
 - **Chart rendering**: Recharts optimized for ~200 data points per chart
 
-### Live Demo
