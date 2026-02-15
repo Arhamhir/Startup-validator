@@ -4,11 +4,11 @@ AI-Powered Multi-Agent Startup Analysis System with Beautiful Dashboard
 
 ## Features
 
-- 🤖 Multi-agent AI analysis (Market, Engineering, Finance, Legal, Social, Critic)
-- 📊 Interactive charts and visualizations
-- 🎨 Beautiful UI with purple, yellow, and black theme
-- ✨ Smooth animations and transitions
-- 📱 Responsive design
+- Multi-agent AI analysis (Market, Engineering, Finance, Legal, Social, Critic)
+- Interactive charts and visualizations
+- Beautiful UI with purple, yellow, and black theme
+- Smooth animations and transitions
+- Responsive design
 
 ## Setup Instructions
 
