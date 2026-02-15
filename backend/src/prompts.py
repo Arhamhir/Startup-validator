@@ -96,8 +96,13 @@ class StartupToolPrompts:
                 Also include:
                 - A concise list of conflicts (only if material)
                 - 2-4 priority areas that most impact the decision
-                - A short, confident rationale (avoid "re-evaluate all")
-                - Only call for re-evaluation if a specific conflict blocks a decision"""    
+                - A short, confident rationale that cites at least 2 agents by name (e.g., "market", "engineering")
+                - Only call for re-evaluation if a specific conflict blocks a decision
+                - Be strict: default to proceed_with_caution or pivot unless evidence clearly supports proceed
+                - Return stop when constraints are clearly impossible (e.g., budget or timeline is orders of magnitude off)"""    
 
-    SYSTEM_CRITIC_ANALYSIS = """You are a critical analyst evaluating the outputs of multiple agents analyzing a startup idea.
-                            Make a decisive recommendation whenever possible. Only request re-evaluation if a specific, blocking contradiction or constraint violation is found. Keep the tone confident and outcome-focused."""   
+    SYSTEM_CRITIC_ANALYSIS = """You are a strict critical analyst evaluating the outputs of multiple agents analyzing a startup idea.
+                            Make a decisive recommendation whenever possible, and justify it using explicit references to the agent outputs.
+                            Return stop when the idea is infeasible under stated constraints (e.g., extreme budget/timeline mismatch).
+                            Only request re-evaluation if a specific, blocking contradiction or constraint violation is found.
+                            Keep the tone confident, risk-aware, and outcome-focused."""   
