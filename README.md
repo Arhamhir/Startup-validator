@@ -3,7 +3,7 @@
 A multi-agent AI analysis system that evaluates startup ideas using specialized LLM agents. It performs feasibility analysis across market, engineering, finance, legal, and social dimensions, then synthesizes findings into a confident recommendation.
 
 **Live Deployment:**
-https://startup-validator-frontend.vercel.app
+- https://startup-validator-frontend.vercel.app
 
 ---
 
